@@ -491,12 +491,9 @@ html {
 .container .main .container-contact .contact .form .grid-input input {
     padding: 12px;
     background: #cccccc15;
-    border: none;
-    outline: none;
-}
-
-.container .main .container-contact .contact .form .grid-input input:focus {
-    border: 1px solid var(--primary-color);
+    border: 1px solid #cccccc38;
+    border-radius: 4px;
+    outline-color: var(--primary-color);
 }
 
 .container .main .container-contact .contact .form .flex-input {
@@ -508,26 +505,19 @@ html {
 .container .main .container-contact .contact .form .flex-input input {
     padding: 12px;
     background: #cccccc15;
-    border: none;
-    outline: none;
+    border: 1px solid #cccccc38;
+    outline-color: var(--primary-color);
+    border-radius: 4px;
     position: relative;
-}
-
-.container .main .container-contact .contact .form .flex-input input:focus {
-    border: 1px solid var(--primary-color);
 }
 
 .container .main .container-contact .contact .form .flex-input textarea {
     padding: 8px 12px;
     height: 160px;
     background: #cccccc15;
-    border: none;
-    outline: none;
+    border: 1px solid #cccccc38;
+    outline-color: var(--primary-color);
     resize: none;
-}
-
-.container .main .container-contact .contact .form .flex-input textarea:focus {
-    border: 1px solid var(--primary-color);
 }
 
 .container .main .container-contact .contact .form .submit {
