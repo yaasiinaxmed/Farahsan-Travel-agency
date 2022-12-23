@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farahsan Travel Agency">
+    <title>Farahsan Travel Agency</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn icons font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- cdn flatpickr desing data time -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/themes/material_blue.css">
+</head>
+<body>
+    <!-- web start -->
+    <div class="container">
+        <!-- start navigation -->
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Farahsan Travel Agency">
+                </div>
+                <div class="menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul>
+                    <li class="active" data-link="home"><a href="#home">home</a></li>
+                    <li data-link="pakages"><a href="#pakages">Pakages</a></li>
+                    <li data-link="services"><a href="#services">Services</a></li>
+                    <li data-link="contact"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end navigation -->
+        <!-- start home -->
+        <section id="home" class="home">
+          <h2 class="title">Welcome Farahsan Travel Agency</h2>
+          <p>Whether you want to take advantage of Somalia's many beautiful attractions or<br> 
+            experience their favorite sights, Farahsan Travel Agency has you covered.</p>
+          <!-- start Book Now -->
+          <div class="book__Now">
+            <div class="check__boxs">
+                <div class="check__box">
+                    <input type="checkbox" class="check">
+                    <span>Round-Trip</span>
+                </div>
+                <div class="check__box">
+                    <input type="checkbox" class="check">
+                    <span>Flight & Hotel</span>
+                </div>
+                <div class="check__box">
+                    <input type="checkbox" class="check">
+                    <span>I prefer direct flights</span>
+                </div>
+            </div>
+            <div class="input__book">
+                <div class="input">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28"fill="currentColor" class="h-6 absolute mt-4 ml-4 opacity-75 transform rotate-45">
+                      <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"></path>
+                   </svg>
+                    <input type="text" placeholder="Where from?">
+                </div>
+                <div class="input">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" fill="currentColor" class="h-6 absolute mt-4 ml-4 opacity-75 transform rotate-45">
+                      <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"></path>
+                   </svg>
+                   <input type="text" placeholder="Where to?">
+                </div>
+                <div class="input">
+                    <input class="selectInput" type="datetime-local" placeholder="Select DateTime">
+                </div>
+            </div>
+            <button class="btn__book"><i class="fa fa-plane-departure"></i> Book Now</button>
+          </div>
+          <!-- end Book Now -->
+        </section>
+        <!-- end home -->
+        <!-- start main content page -->
+        <main class="main">
+          <!-- start our Pakages -->
+          <section class="container-pakages" id="pakages"> 
+            <h2 class="title-sec">Our Pakages</h2> 
+            <div class="pakages">
+                <div class="pakage">
+                    <div class="img">
+                        <img src="./images/mogadishu1.jpg" alt="">
+                        <div class="hover">
+                            <span>Mogadisho</span>
+                        </div>
+                    </div>
+                    <h3 class="name">MOGADISHU</h3>
+                    <div class="location"><i class="fa fa-location-dot"></i> Somalia - Mogadisho</div>
+                    <p class="detail">Mogadishu is the capital city of Somalia.</p>
+                    <span class="price">$389</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="pakage">
+                    <div class="img">
+                        <img src="./images/egal-airport1.jpg" alt="">
+                        <div class="hover">
+                            <span>Hargeisa</span>
+                        </div>
+                    </div>
+                    <h3 class="name">HARGEISA</h3>
+                    <div class="location"><i class="fa fa-location-dot"></i> Somalia - Hargeisa</div>
+                    <p class="detail"> Hargeisa is the capital city of somaliland state of Somalia</p>
+                    <span class="price">$153</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="pakage">
+                    <div class="img">
+                        <img src="./images/garowe1.jpg" alt="">
+                        <div class="hover">
+                            <span>Garowe</span>
+                        </div>
+                    </div>
+                    <h3 class="name">GAROWE</h3>
+                    <div class="location"><i class="fa fa-location-dot"></i> Somalia - Garowe</div>
+                    <p class="detail">Garowe is the capital city of Puntland state of Somalia</p>
+                    <span class="price">$147</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="pakage">
+                    <div class="img">
+                        <img src="./images/kismayo1.jpg" alt="">
+                        <div class="hover">
+                            <span>Kismayo</span>
+                        </div>
+                    </div>
+                    <h3 class="name">KISMAYO</h3>
+                    <div class="location"><i class="fa fa-location-dot"></i> Somalia - Kismayo</div>
+                    <p class="detail">Kismayo is the temporary capital city of 
+                        jubaland state of Somalia</p>
+                    <span class="price">$129</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="pakage">
+                    <div class="img">
+                        <img src="./images/BAIDOA1.jpg" alt="">
+                        <div class="hover">
+                            <span>Baidoa</span>
+                        </div>
+                    </div>
+                    <h3 class="name">BAIDOA</h3>
+                    <div class="location"><i class="fa fa-location-dot"></i> Somalia - Baidoa</div>
+                    <p class="detail">Baidoa is temporary capital city of southwest
+                        state of Somalia</p>
+                    <span class="price">$119</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="pakage">
+                    <div class="img">
+                        <img src="./images/nairobi.jpg" alt="">
+                        <div class="hover">
+                            <span>Nairobi</span>
+                        </div>
+                    </div>
+                    <h3 class="name" >NAIROBI</h3>
+                    <div class="location"><i class="fa fa-location-dot"></i> Kenya - Nairobi</div>
+                    <p class="detail">Nairobi is the capital city of Kenya.</p>
+                    <span class="price">$289</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                
+            </div>
+          </section>
+          <!-- end our Pakages -->
+          <!-- start our services -->
+          <section class="container-services" id="services">
+            <h2 class="title-sec">Our Services</h2> 
+            <div class="services">
+                <div class="service">
+                    <div class="row">
+                        <i class="fa fa-hotel"></i>
+                        <span>01</span>
+                    </div>
+                    <b>Affordable Hotels</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <div class="row">
+                        <i class="fa fa-plane"></i>
+                        <span>02</span>
+                    </div>
+                    <b>Fastest Travel</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <div class="row">
+                        <i class="fa fa-utensils"></i>
+                        <span>03</span>
+                    </div>
+                    <b>Food And Drinks</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <div class="row">
+                        <i class="fa fa-globe"></i>
+                        <span>04</span>
+                    </div>
+                    <b>Around The Word</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <div class="row">
+                        <i class="fa fa-person-hiking"></i>
+                        <span>05</span>
+                    </div>
+                    <b>New Adventures</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="service">
+                    <div class="row">
+                        <i class="fa fa-bullhorn"></i>
+                        <span>06</span>
+                    </div>
+                    <b>Safety Guide</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+          </section>
+          <!-- end our services -->
+          <!-- start Contact us -->
+          <section class="container-contact" id="contact">
+            <h2 class="title-sec">Contact us</h2> 
+            <div class="contact">
+                <div class="image">
+                    <img src="./images/contact.png" alt="">
+                </div>
+                <form class="form">
+                    <div class="grid-input">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="flex-input">
+                        <input type="text" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+          </section>
+          <!-- end Contact us -->
+        </main>
+        <!-- end main content page -->
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="lists">
+                <ul class="list-one">
+                    <b>Our Branches</b>
+                    <li><i class="fa fa-location-dot"></i> Mogadisho</li>
+                    <li><i class="fa fa-location-dot"></i> Hargeys</li>
+                    <li><i class="fa fa-location-dot"></i> Garowe</li>
+                    <li><i class="fa fa-location-dot"></i> Kismaayo</li>
+                </ul>
+                <ul class="list-one">
+                    <b>Quick Links</b>
+                    <li><i class="fa fa-angle-right"></i> <a href="#home">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#pakages">Pakages</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#services">Services</a></li>
+                    <li><i class="fa fa-angle-right"></i> <a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="list-one">
+                    <b>Follow Us</b>
+                    <li><i class="fa-brands fa-facebook-f"></i> <a href="#">Facebook</a></li>
+                    <li><i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a></li>
+                    <li><i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a> </li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="final-footer">
+                <p>© <span>Farahsan Travel Agency</span>. All rigths reserved</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+    <!-- web end -->
+    <!-- cdn flatpickr js -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- javascript -->
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+home text: 
+title: Welcome Farahsan Travel Agency 
+detail: Whether you want to take advantage of Somalia's many beautiful attractions or 
+          experience their favorite sights, Farahsan Travel Agency has you covered.
+
+details our pakages : 
+1: name : MOGADISHU 
+   location: Somalia - Mogadisho
+   Detail: Mogadishu is the capital city of Somalia.
+   price: $389
+2: name : NAIROBI
+   location: Kenya - Nairobi
+   Detail: Nairobi is the capital city of Kenya.
+   price: $289
+3: name: ISTANBUL
+   location: Turkey - Istanbul
+   Detail: Istanbul is the most populous city in
+   Turkey and the country's economic, cultural 
+   and historic center.
+   price: $563
+4: name: DUBAI 
+   location: Dubai - United Arab Emirates
+   Detail: Dubai is the most populous city in the 
+   United Arab Emirates (UAE) and the capital 
+   of the Emirate of Dubai.
+   price: $868
+5: name: MINNEAPOLIS
+   location: United States - Minneapolis,Minnesota
+   Detail: Minneapolis is a major city in Minnesota that 
+   forms "Twin Cities" with the neighboring 
+   state capital of St. Paul.
+   price: $989
+6: name: HARGEISA
+   location: Somalia - Hargeisa
+   Detail: Hargeisa is the capital city of somaliland 
+           state of Somalia
+   price: $153
+7: name: GAROWE
+   location: Somalia - Garowe
+   Detail: Garowe is the capital city of Puntland 
+           state of Somalia
+   price: $147
+8: name: KISMAYO
+   location: Somalia - Kismayo
+   Detail: Kismayo is the temporary capital city of 
+           jubaland state of Somalia
+   price: $129
+9: name: BAIDOA
+   location: Somalia - Baidoa
+   Detail: Baidoa is temporary capital city of southwest
+           state of Somalia
+   price: $119

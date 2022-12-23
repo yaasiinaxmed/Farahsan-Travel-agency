@@ -1,0 +1,818 @@
+/* cdn text style  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* start style css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* scroll smooth html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* colors */
+:root {
+    --primary-color: #0077ff;
+    --txt-color: #555;
+    --light-blue: #258bffcc;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --white-color: #fff;
+}
+
+/* desing all titles */
+.title-sec {
+    width: 100%;
+    background: var(--primary-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--white-color);
+    text-transform: Uppercase;
+    position: relative;
+    top: 45px;
+}
+
+.title-sec::before {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    content: "";
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(to right , var(--white-color), transparent);
+}
+
+.title-sec::after {
+    position: absolute;
+    top: -7px;
+    right: 0;
+    content: "";
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(to left , var(--white-color), transparent);
+}
+
+/* start container  */
+.container {
+    width: 100%;
+}
+
+/* start style header navigation */
+.container .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--white-color);
+    box-shadow: 0 0 8px var(--box-shadow);
+    z-index: 10;
+}
+
+.container .header .nav {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; */
+}
+
+.container .header .nav .logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* overflow: hidden; */
+}
+
+.container .header .nav .logo img {
+    width: 190px;
+    cursor: pointer;
+}
+
+.container .header .nav .menu {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+.container .header .nav ul {
+    display: flex;
+    gap: 5px;
+}
+
+.container .header .nav ul li a {
+    padding: 8px 10px;
+    color: var(--txt-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.container .header .nav ul li a::before {
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    transform: scale(0);
+    transform-origin: center;
+    transition: 0.3s ease;
+}
+
+.container .header .nav ul li a:hover::before,
+.container .header .nav ul li.active a::before {
+    transform: scale(1);
+}
+
+.container .header .nav ul li a:hover,
+.container .header .nav ul li.active a {
+    color: var(--primary-color);
+}
+/* end style header navigation */
+
+/*  start style home */
+.container .home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #0077ff, transparent), url("./images/home.jpg") no-repeat center / cover;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .home .title {
+    color: var(--white-color);
+    font-size: 42px;
+}
+
+.container .home p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+
+.container .home .book__Now {
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px var(--box-shadow);
+    margin-top: 30px;
+}
+
+.container .home .book__Now .check__boxs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .home .book__Now .check__boxs .check__box {
+    display: flex;
+    gap: 6px;
+}
+
+.container .home .book__Now .check__boxs .check__box .check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.container .home .book__Now .input__book {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 16px;
+}
+
+.container .home .book__Now .input__book .input {
+    position: relative;
+}
+
+.container .home .book__Now .input__book .input input {
+    padding: 10px 14px;
+    padding-left: 35px;
+    border: 1px solid var(--txt-color);
+    outline-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.container .home .book__Now .input__book .input .selectInput {
+    padding-left: 8px;
+}
+
+.container .home .book__Now .input__book .input svg {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    transform: rotate(30deg);
+    color: var(--primary-color);
+}
+
+.container .home .book__Now .btn__book {
+    margin-top: 18px;
+    width: 80%;
+    padding: 12px 20px;
+    background: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.container .home .book__Now .btn__book:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+/*  end style home */
+
+/*  start style main content page */
+.container .main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* start our Pakages */
+.container .main .container-pakages {
+    width: 100%;
+    height: 120vh;
+    overflow-y: hidden;
+}
+
+.container .main .container-pakages .pakages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    position: relative;
+    top: 70px;
+    padding-bottom: 20px;
+}
+
+.container .main .container-pakages .pakages .pakage {
+    width: 345px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 0 8px var(--box-shadow);
+    border-radius: 4px;
+}
+
+.container .main .container-pakages .pakages .pakage .img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .main .container-pakages .pakages .pakage .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container .main .container-pakages .pakages .pakage .img .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--primary-color), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    display: none;
+    transition: all 0.5s;
+}
+
+.container .main .container-pakages .pakages .pakage .img .hover span {
+    position: relative;
+    top: 44px;
+}
+
+.container .main .container-pakages .pakages .pakage .img:hover .hover {
+    display: flex;
+}
+
+.container .main .container-pakages .pakages .pakage .name {
+    color: var(--primary-color);
+}
+
+.container .main .container-pakages .pakages .pakage .location {
+    color: #222;
+}
+
+.container .main .container-pakages .pakages .pakage .location i {
+    color: var(--primary-color);
+    padding-right: 4px;
+}
+
+.container .main .container-pakages .pakages .pakage .detail {
+    color: var(--txt-color);
+}
+
+.container .main .container-pakages .pakages .pakage .price {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--txt-color);
+}
+
+.container .main .container-pakages .pakages .pakage .btn {
+    padding: 8px 0;
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 500;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.4s ease;
+}
+
+.container .main .container-pakages .pakages .pakage .btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* end our Pakages */
+
+/* start our services */
+.container .main .container-services {
+    width: 100%;
+    height: 70vh;
+    background: var(--white-color);
+    overflow: hidden;
+}
+
+.container .main .container-services .title-sec {
+    top: 70px;
+}
+
+.container .main .container-services .services {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 18px;
+    padding-bottom: 15px;
+}
+
+.container .main .container-services .services .service {
+    /* width: 290px; */
+    padding: 15px;
+    background: var(--white-color);
+    box-shadow: 0 0 6px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .main .container-services .services .service::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s linear;
+}
+
+.container .main .container-services .services .service:hover::before {
+    transform: scaleX(1);
+}
+
+.container .main .container-services .services .service .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .main .container-services .services .service .row i {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 40px;
+}
+
+.container .main .container-services .services .service .row span {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--txt-color);
+}
+
+/* end our services */
+
+/* start Contact us */
+.container .main .container-contact {
+    width: 100%;
+    height: 80vh;
+}
+
+.container .main .container-contact .contact {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main .container-contact .contact .image {
+    width: 500px;
+    overflow: hidden;
+}
+
+.container .main .container-contact .contact .image img {
+    width: 100%;
+}
+
+.container .main .container-contact .contact .form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 12px;
+}
+
+.container .main .container-contact .contact .form .grid-input {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 12px;
+    position: relative;
+}
+
+.container .main .container-contact .contact .form .grid-input input {
+    padding: 12px;
+    background: #cccccc15;
+    border: none;
+    outline: none;
+}
+
+.container .main .container-contact .contact .form .grid-input input:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.container .main .container-contact .contact .form .flex-input {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container .main .container-contact .contact .form .flex-input input {
+    padding: 12px;
+    background: #cccccc15;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.container .main .container-contact .contact .form .flex-input input:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.container .main .container-contact .contact .form .flex-input textarea {
+    padding: 8px 12px;
+    height: 160px;
+    background: #cccccc15;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.container .main .container-contact .contact .form .flex-input textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.container .main .container-contact .contact .form .submit {
+    padding: 12px;
+    background: var(--primary-color);
+    border: 2px solid #0077ff;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.4s ease;
+    cursor: pointer;
+}
+
+.container .main .container-contact .contact .form .submit:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+/* end  Contact us */
+/*  end style main content page */
+/* start footer */
+.container .footer {
+    width: 100%;
+    background: #cccccc15;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.container .footer .lists {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .footer .lists .list-one {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.container .footer .lists .list-one li {
+    color: var(--txt-color);
+}
+
+.container .footer .lists .list-one li i {
+    color: var(--primary-color);
+    padding-right: 8px;
+}
+
+.container .footer .lists .list-one li a {
+    color: var(--txt-color);
+}
+
+.container .footer .final-footer {
+    width: 80%;
+    margin: 16px auto 0;
+    border-top: 0.5px solid #5555554d;
+    padding: 14px;
+    text-align: center;
+}
+
+.container .footer .final-footer p span {
+    color: var(--primary-color);
+}
+
+/* end footer */
+
+/* start responsive style */
+
+@media (max-width: 1240px) {
+    .container .main .container-services .services {
+        width: 95%;
+    }
+
+    .container .main .container-contact .contact {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1028px) {
+    .container .header .nav {
+        width: 80%;
+    }
+}
+
+@media (max-width: 960px) {
+    .container .main .container-services {
+        height: 90vh;
+    }
+
+    .container .main .container-services .services {
+       grid-template-columns: repeat(2, 2fr);
+    }
+
+    .container .main .container-contact .contact {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .container .main .container-contact .contact .image {
+       display: none;
+    }
+
+}
+
+@media (max-width: 830px) {
+    .container .home p {
+        font-size: 15px;
+    }
+
+    .container .main {
+        width: 95%;
+    }
+}
+
+@media (max-width: 780px) {
+    .container .home .title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 774px) {
+    .container .header .nav {
+        width: 95%;
+    }
+
+    .container .main .container-pakages {
+        height: 228vh;
+    }
+}
+
+@media (max-width: 710px) {
+    .container .header .nav .menu {
+        display: block;
+    }
+
+    .container .header .nav {
+        overflow: none;
+    }
+    .container .header .nav ul {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background: var(--primary-color);
+        border-bottom-left-radius: 300px;
+        border-left: 2px solid var(--white-color);
+        box-shadow: 0 0 8px var(--box-shadow);
+        flex-direction: column;
+        gap: 0;
+        z-index: 10;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+    }
+
+    .container .header .nav ul.active {
+        transform: scaleX(1);
+    }
+
+    .container .header .nav ul li {
+       width: 100%;
+       height: 50px;
+       padding: 12px;
+       border-bottom: 2px solid var(--white-color);
+       cursor: pointer;
+    }
+
+    .container .header .nav ul li:is(:hover, .active) {
+        background: #0269df !important;
+    }
+
+    .container .header .nav ul li a {
+        color: var(--white-color);
+        padding: 0;
+        position: static;
+    }
+
+    .container .header .nav ul li a:hover,
+    .container .header .nav ul li.active a {
+        color: var(--white-color)
+    } 
+
+    .container .home .book__Now .input__book {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .home .book__Now .input__book .input {
+        width: 100%
+    }
+
+    .container .home .book__Now .input__book .input input {
+        width: 100%;
+    }
+
+    .container .home p br {
+        display: none;
+    }
+
+    .container .main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .container .main .container-services {
+        height: 150vh;
+    }
+
+    .container .main .container-services .services {
+        width: 80%;
+        grid-template-columns: 2fr;
+    }
+
+    .container .main .container-contact .contact .form {
+        width: 95%;
+    }
+
+    .container .footer .lists {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 490px) {
+    .container .home .book__Now {
+        width: 90%;
+    }
+}
+
+@media (max-width: 444px) {
+    .container .home .title {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .container .main {
+        width: 90%;
+    }
+
+    .container .main .container-pakages {
+        overflow-y: visible;
+    }
+
+    .container .main .container-services {
+        overflow: visible;
+    }
+
+    .container .main .container-services .services {
+        width: 100%;
+    }
+
+    .container .main .container-pakages .pakages  .pakage:nth-child(5) {
+        display: none;
+    }
+
+    .container .main .container-pakages .pakages  .pakage:nth-child(6) {
+        display: none;
+    }
+
+    .container .main .container-contact .contact .form .grid-input{
+        width: 100%;
+        grid-template-columns: 2fr;
+    }
+
+    .container .footer .lists {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .container .footer .lists .list-one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+/* end responsive style */
+
+/* end style css */
