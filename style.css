@@ -813,6 +813,26 @@ html {
         flex-direction: column;
     }
 }
+
+@media (max-width: 375px) {
+    .container .home .title {
+        margin-top: 15px;
+    }
+
+    .container .main .container-pakages {
+        height: 235vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .container .main .container-pakages {
+        height: 245vh;
+    }
+
+    .container .main .container-services {
+        height: 160vh;
+    }
+}
 /* end responsive style */
 
 /* end style css */
